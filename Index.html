@@ -1,68 +1,136 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaber Mahmoud Portfolio</title>
+    <title>Jaber Mahmoud | Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Jaber Mahmoud</h1>
-        <h2>Data Science Student | Designer | Developer</h2>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="container header-content">
+            <div class="profile">
+                <img src="Me.jpeg" alt="Jaber Mahmoud" class="profile-img">
+                <div>
+                    <h1>Jaber Mahmoud</h1>
+                    <h2>Data Science Student · Developer</h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Home Section -->
-        <section id="home">
+        <section id="home" class="section">
             <h3>Welcome</h3>
-            <p>I’m Jaber, a passionate data science student who merges technology, design, and data to craft meaningful solutions. I'm currently pursuing my bachelor's degree in Data Science, and I’ve taken over 30 university-level courses related to programming, statistics, and machine learning.</p>
-            <p>Beyond academics, I’ve worked as a designer with the Google Developer Student Club (GDSC) and earned certifications from IBM, Microsoft, and Google.</p>
-            <img src="Me.jpeg" alt="Photo of Jaber Mahmoud" width="200">
+            <p>
+                I'm Jaber Mahmoud, a dedicated data science student at Université Saint-Joseph (USJ) with a strong foundation in mathematics and hands-on experience in programming, machine learning, and data visualization. I specialize in Python, R, SQL, and advanced analytics tools, and am passionate about turning data into impactful solutions.
+            </p>
+            <p>
+                I've worked as a designer with Google Developer Student Club (GDSC) and earned certifications from IBM, Microsoft, and Google. Explore my portfolio to see my latest projects and skills!
+            </p>
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section id="about" class="section">
             <h3>About Me</h3>
-            <ul>
-                <li><strong>Education:</strong> BSc in Data Science</li>
-                <li><strong>Certifications:</strong> Python (IBM), Web Dev (Microsoft), Digital Marketing (Google)</li>
-                <li><strong>Skills:</strong> Python, R, C++, HTML, CSS, SQL, Tableau, Excel</li>
-                <li><strong>Tools:</strong> GitHub, VS Code, Jupyter, Power BI</li>
-                <li><strong>Experience:</strong> Designer at GDSC (Google Developer Student Club)</li>
+            <div class="about-cards">
+                <div class="card">
+                    <h4>Education</h4>
+                    <p>BSc in Mathematics - Data Science Option<br>Université Saint-Joseph, Expected May 2026</p>
+                </div>
+                <div class="card">
+                    <h4>Technical skills</h4>
+                    <ul>
+                        <li>Programming: Python, R, SQL, C++, C#, HTML, CSS, JavaScript</li>
+                        <li>Machine Learning: scikit-learn, pandas, NumPy</li>
+                        <li>Visualization: Tableau, Power BI, Matplotlib, Seaborn, Excel</li>
+                        <li>Tools: GitHub, VS Code, Jupyter, Azure, Google Workspace</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Arabic: Native</li>
+                        <li>English: Fluent</li>
+                        <li>French: A1</li>
+                        <li>German: A1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h3>Featured Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Sales Analysis</h4>
+                    <p>Comprehensive sales data analysis and visualizations. It loads transaction data, applies customer segmentation, and generates multiple advanced visualizations including time series trends, correlation matrices, and 3D scatter plots. The implementation provides statistical insights and business intelligence through diverse chart types. <br>
+                    <a href="https://github.com/JaberMahmoud4/Sales-Analysis" target="_blank">View on GitHub</a></p>
+                </div>
+                <div class="project-card">
+                    <h4>Rainfall Prediction</h4>
+                    <p>A machine learning pipeline comparing Random Forest and Logistic Regression models to predict rainfall in Melbourne using historical weather data..<br>
+                    <a href="https://github.com/JaberMahmoud4/Rainfall-Prediction" target="_blank">View on GitHub</a></p>
+                </div>
+                <div class="project-card">
+                    <h4>SpaceX Falcon 9 Analysis</h4>
+                    <p>Analyzed SpaceX Falcon 9 launch data to predict first-stage landing success using SQL, data visualization, and machine learning models..<br>
+                    <a href="https://github.com/JaberMahmoud4/Space-X-Falcon9/tree/main" target="_blank">View on GitHub</a></p>
+                </div>
+                <div class="project-card">
+                    <h4>GDSC Social Media Design</h4>
+                    <p>Designed and managed digital content for Google Developer Student Club campaigns.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+                <li><strong>IBM Data Science Specialization</strong></li>
+                <li><strong>Google Workspace & Forms</strong></li>
+                <li><strong>Microsoft Office & Azure</strong></li>
+				<li><strong>Web Development</strong></li>
+				<li><strong>C#</strong></li>
+                <li><strong>Tableau</strong></li>        
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" class="section">
             <h3>Contact Me</h3>
-            <p>I'm always happy to connect. Use the form or links below!</p>
-            <ul>
+            <p>I'm always open to collaborations, networking, or just a chat!</p>
+            <ul class="contact-list">
                 <li>Email: <a href="mailto:jaber_md22@outlook.com">jaber_md22@outlook.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/jaber-mahmoud/?lipi=urn%3Ali%3Apage%3Afeed_index_index%3B9a9a541f-af2d-452e-a45f-24bda0347370" target="_blank">www.linkedin.com/in/jaber-mahmoud</a></li>
-                <li>GitHub: <a href="https://github.com/JaberMahmoud4?tab=repositories" target="_blank">github.com/JaberMahmoud4</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/jaber-mahmoud/" target="_blank">linkedin.com/in/jaber-mahmoud</a></li>
+                <li>GitHub: <a href="https://github.com/JaberMahmoud4" target="_blank">github.com/JaberMahmoud4</a></li>
             </ul>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-                <button type="submit">Send</button>
+            <form id="contactForm" autocomplete="off">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Jaber Mahmoud. All rights reserved.</p>
+        <button id="backToTop" title="Go to top">↑</button>
     </footer>
-	<button id="backToTop" title="Go to top">↑</button>
 
-	<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
